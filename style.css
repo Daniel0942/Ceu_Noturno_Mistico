@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
+    font: normal 15pt Consolas;
+    background-color: #09102d;
+    color: white;
+}
+.flex {
+    display: flex;
+}
+
+a {
+    color: #928e8ed8;
+    text-decoration: none;
+}
+/* topo-do-site */
+header#topo-do-site .flex {
+    /* colocar a logo no canto e o menu no outro */
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.menu-desktop li{
+    display: inline-block;
+    padding: 8px;
+    transition: 0.5s;
+}
+.menu-desktop li:hover {
+    color: white;
+    background-color: #04165c;
+    border: 3px solid #928e8ed8;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #00000082;
+    transform: scale(1.05);
+}
+
