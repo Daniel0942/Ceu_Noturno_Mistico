@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: Poppins;
     background-color: #09102d;
     color: white;
 }
@@ -24,21 +24,27 @@ span {
     width: 300px;
 }
 /* topo-do-site */
-header#topo-do-site {
+.topo-do-site {
     background-image: url(imagens/capa_de_cima.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center;  
 }
-
+/* quando apertar o botão de 2° capa, é pra abrir o outro papel de parede*/
+.topo-do-site-JS {
+    background-image: url(imagens/capa-de-cima-JS.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
 header#topo-do-site .flex {
     /* colocar a logo no canto e o menu no outro */
     justify-content: space-between;
     padding: 20px 30px;
 }
 .menu-desktop li{
+    background-color: #04165c96;
+    font-weight: bold;
     display: inline-block;
-    padding: 4px;
+    padding: 8px;
     transition: 0.5s;
     border: 3px solid #928e8e00;
     border-radius: 15px;
@@ -46,20 +52,22 @@ header#topo-do-site .flex {
 }
 .menu-desktop li:hover {
     color: white;
-    background-color: #04165c9a;
-    transform: scale(1.06);
+    background-color: #04165ced;
+    transform: scale(1.07);
 }
 
 /* topo-do-site | topo-txt */
 div#topo-txt {
     text-align: center;
     margin-right: 55%;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 div#topo-txt button {
     background-color: #8e57b2c6;
-    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    padding:  14px 25px;
     border: 10px #09102d;
     border-radius: 10px;
     color: white;
@@ -67,7 +75,7 @@ div#topo-txt button {
 }
 div#topo-txt button:hover {
     transform: scale(1.07);
-    background-color: #875ea2e7;
+    background-color: #7b3ea3e7;
     box-shadow: 3px 3px 10px #09102d82;
 }
 
@@ -75,7 +83,7 @@ div#topo-txt button:hover {
 div#topo-menu {
     text-align: center;
     background-color: #09102d79;
-    margin-top: 9%;
+    margin-top: 104px;
 }
 div#topo-menu li {
     display: inline-block;
