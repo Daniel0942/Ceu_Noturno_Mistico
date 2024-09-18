@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font: normal 15pt Consolas;
+    font-family: arial;
     background-color: #09102d;
     color: white;
 }
@@ -16,7 +16,21 @@ a {
     color: #928e8ed8;
     text-decoration: none;
 }
+span {
+    color: #838BC5;
+    font-weight: bold;
+}
+.txt {
+    width: 300px;
+}
 /* topo-do-site */
+header#topo-do-site {
+    background-image: url(imagens/capa_de_cima.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
 header#topo-do-site .flex {
     /* colocar a logo no canto e o menu no outro */
     justify-content: space-between;
@@ -24,15 +38,68 @@ header#topo-do-site .flex {
 }
 .menu-desktop li{
     display: inline-block;
-    padding: 8px;
+    padding: 4px;
     transition: 0.5s;
+    border: 3px solid #928e8e00;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #00000082;
 }
 .menu-desktop li:hover {
     color: white;
-    background-color: #04165c;
-    border: 3px solid #928e8ed8;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px #00000082;
-    transform: scale(1.05);
+    background-color: #04165c9a;
+    transform: scale(1.06);
 }
 
+/* topo-do-site | topo-txt */
+div#topo-txt {
+    text-align: center;
+    margin-right: 55%;
+    margin-top: 8%;
+}
+
+div#topo-txt button {
+    background-color: #04165c94;
+    padding: 10px 20px;
+    border: 10px #09102d;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+div#topo-txt button:hover {
+    transform: scale(1.06);
+    background-color: #04165c90;
+    border: 10px #09102d;
+    box-shadow: 3px 3px 10px #576fc6;
+}
+
+/* topo-do-site | topo-menu */
+div#topo-menu {
+    text-align: center;
+    background-color: #09102d79;
+    margin-top: 74px;
+}
+div#topo-menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #928e8ed8;
+    font-size: 18px;
+}
+
+/* sobre */
+section#sobre .sobre-txt {
+    text-align: center;
+    margin-top: 3%;
+}
+
+section#sobre .caixa-txt {
+    display: flex;  
+}
+
+section#sobre .icone img{
+    width: 50px;
+    margin-top: 20px;
+}
+
+section#sobre .caixa-txt .txt {
+    padding: 0px 5px;
+}
