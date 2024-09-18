@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: arial;
+    font-family: Arial;
     background-color: #09102d;
     color: white;
 }
@@ -54,11 +54,11 @@ header#topo-do-site .flex {
 div#topo-txt {
     text-align: center;
     margin-right: 55%;
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 div#topo-txt button {
-    background-color: #04165c94;
+    background-color: #8e57b2c6;
     padding: 10px 20px;
     border: 10px #09102d;
     border-radius: 10px;
@@ -66,17 +66,16 @@ div#topo-txt button {
     transition: .5s;
 }
 div#topo-txt button:hover {
-    transform: scale(1.06);
-    background-color: #04165c90;
-    border: 10px #09102d;
-    box-shadow: 3px 3px 10px #576fc6;
+    transform: scale(1.07);
+    background-color: #875ea2e7;
+    box-shadow: 3px 3px 10px #09102d82;
 }
 
 /* topo-do-site | topo-menu */
 div#topo-menu {
     text-align: center;
     background-color: #09102d79;
-    margin-top: 74px;
+    margin-top: 9%;
 }
 div#topo-menu li {
     display: inline-block;
@@ -88,11 +87,27 @@ div#topo-menu li {
 /* sobre */
 section#sobre .sobre-txt {
     text-align: center;
-    margin-top: 3%;
+    margin: 3% 0;
+}
+section#sobre .flex {
+    flex-wrap: wrap; 
+    /*permite que os itens flex quebrem a linha quando não houver espaço suficiente.*/
+    justify-content: center;
+    gap: 20px;
 }
 
 section#sobre .caixa-txt {
     display: flex;  
+    width: 400px;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 3px solid #838bc51d;
+    
+}
+section#sobre .caixa-txt:hover {
+    border: 3px solid #838bc575;
+    box-shadow:3px 3px 10px #838bc55d;
+    transform: scale(1.07);
 }
 
 section#sobre .icone img{
@@ -102,4 +117,8 @@ section#sobre .icone img{
 
 section#sobre .caixa-txt .txt {
     padding: 0px 5px;
+}
+
+section#sobre .caixa-txt .txt p {
+    color: #ffffff6a;
 }
