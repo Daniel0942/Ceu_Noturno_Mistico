@@ -23,6 +23,22 @@ span {
 .txt {
     width: 300px;
 }
+
+button {
+    background-color: #8e57b298;
+    font-weight: bold;
+    font-size: 16px;
+    padding:  14px 25px;
+    border: 10px #09102d;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+button:hover {
+    transform: scale(1.07);
+    background-color: #7b3ea3cb;
+    box-shadow: 3px 3px 10px #09102d82;
+}
 /* topo-do-site */
 .topo-do-site {
     background-image: url(imagens/capa_de_cima.jpeg);
@@ -61,22 +77,6 @@ div#topo-txt {
     text-align: center;
     margin-right: 55%;
     margin-top: 3%;
-}
-
-div#topo-txt button {
-    background-color: #8e57b2c6;
-    font-weight: bold;
-    font-size: 16px;
-    padding:  14px 25px;
-    border: 10px #09102d;
-    border-radius: 10px;
-    color: white;
-    transition: .5s;
-}
-div#topo-txt button:hover {
-    transform: scale(1.07);
-    background-color: #7b3ea3e7;
-    box-shadow: 3px 3px 10px #09102d82;
 }
 
 /* topo-do-site | topo-menu */
@@ -129,4 +129,29 @@ section#sobre .caixa-txt .txt {
 
 section#sobre .caixa-txt .txt p {
     color: #ffffff6a;
+}
+
+/* astronomia */
+.astronomia {
+    margin-top: 3%;
+}
+
+.astronomia .flex {
+    justify-content: center;
+    gap: 8%;
+}
+.astronomia .astronomia-caixa-txt{
+    width: 500px;
+}
+
+/* rodapé */
+footer#rodapé .rodapé-logo{
+    text-align: left;
+    padding: 2% 0% 0% 4%;
+}
+footer#rodapé p{
+    text-align: center;
+    background-color: #838BC5;
+    margin-bottom: 2%;
+    padding: 5px 0;
 }
